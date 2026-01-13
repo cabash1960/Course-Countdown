@@ -1,5 +1,3 @@
-import React from "react";
-
 function Svg() {
   return (
     <div className="custom-shape-divider-bottom-1768287549">
@@ -25,26 +23,6 @@ function Svg() {
         ></path>
       </svg>
     </div>
-    // <div className="absolute top-0 left-0 w-full overflow-hidden leading-0 ">
-    //   <svg
-    //     xmlns="http://www.w3.org/2000/svg"
-    //     viewBox="0 0 1440 320"
-    //     className="w-full  block"
-    //   >
-    //     <defs>
-    //       <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-    //         <stop offset="0%" stopColor="#4c1d95" />
-    //         <stop offset="50%" stopColor="#6b21a8" />
-    //         <stop offset="100%" stopColor="#312e81" />
-    //       </linearGradient>
-    //     </defs>
-    //     <path
-    //       fill="url(#heroGradient)"
-    //       fillOpacity="1"
-    //       d="M0,32L26.7,42.7C53.3,53,107,75,160,112C213.3,149,267,203,320,218.7C373.3,235,427,213,480,181.3C533.3,149,587,107,640,101.3C693.3,96,747,128,800,128C853.3,128,907,96,960,122.7C1013.3,149,1067,235,1120,261.3C1173.3,288,1227,256,1280,256C1333.3,256,1387,288,1413,304L1440,320L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
-    //     />
-    //   </svg>
-    // </div>
   );
 }
 
