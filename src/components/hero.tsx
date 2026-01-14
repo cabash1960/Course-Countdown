@@ -144,7 +144,7 @@ w-80 h-80 opacity-15 blur-2xl"
         <Imgcomp className="relative z-10" />
       </div>
 
-      <Button className="relative z-20">Enroll Now</Button>
+      <Button className="relative z-20">Click Here To Register</Button>
 
       <Svg />
     </section>

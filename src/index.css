@@ -78,3 +78,69 @@ body {
     height: 60px; /* Even smaller for very small screens */
   }
 }
+
+/* Ensure WebinarJam modal appears above everything */
+[id*="wjembed"],
+[class*="wjembed"],
+[id*="webinarjam"],
+[class*="webinarjam"],
+.wj_modal,
+.wj_overlay,
+[class*="wj_"] {
+  z-index: 9999 !important;
+}
+
+/* Ensure modal overlay and content have high z-index */
+[id*="wjembed"] > div,
+[class*="wjembed"] > div,
+[id*="wjembed"] *,
+[class*="wjembed"] *,
+div[style*="position: fixed"],
+div[style*="position:fixed"] {
+  z-index: 9999 !important;
+}
+
+/* Ensure modal overlay and content have high z-index */
+[id*="wjembed"] > div,
+[class*="wjembed"] > div,
+[id*="wjembed"] *,
+[class*="wjembed"] *,
+div[style*="position: fixed"],
+div[style*="position:fixed"] {
+  z-index: 9999 !important;
+}
+
+/* Make WebinarJam close button more visible */
+.iframe_modal_holder .close {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  width: 30px !important;
+  height: 30px !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  cursor: pointer !important;
+  z-index: 10001 !important;
+  border-radius: 4px !important;
+}
+
+.iframe_modal_wrapper .close::before,
+.iframe_modal_wrapper .close::after {
+  content: '' !important;
+  position: absolute !important;
+  width: 20px !important;
+  height: 2px !important;
+  background-color: white !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) rotate(45deg) !important;
+}
+
+[class*="wj"] .close::after,
+.iframe_modal_holder .close::after {
+  content: '' !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: white !important;
+  transform: rotate(90deg) !important;
+}

@@ -1,12 +1,4 @@
-// import { useWebinarJam } from "./webinarButton";
-
-function openWebinarJam() {
-  window.open(
-    "https://event.webinarjam.com/register/ykznk5ty",
-    "_blank",
-    "noopener,noreferrer"
-  );
-}
+import { openWebinarJam } from "../hooks/openWebinar";
 
 function Button({
   children,

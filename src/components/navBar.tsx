@@ -1,11 +1,6 @@
 import { useState } from "react";
-function openWebinarJam() {
-  window.open(
-    "https://event.webinarjam.com/register/ykznk5ty",
-    "_blank",
-    "noopener,noreferrer"
-  );
-}
+import { openWebinarJam } from "../hooks/openWebinar";
+
 function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -34,7 +29,7 @@ function Navbar() {
             onClick={openWebinarJam}
             className="px-5 py-2 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold hover:opacity-90 transition"
           >
-            Enroll Now
+            Click Here To Register
           </a>
         </div>
 
