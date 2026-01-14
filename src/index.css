@@ -5,6 +5,9 @@
   --font-family-sans: Poppins, sans-serif;
   --font-family-heading: Poppins, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   font-family: Poppins, Lora, sans-serif;

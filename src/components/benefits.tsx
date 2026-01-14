@@ -1,5 +1,6 @@
 import { svg } from "./svgs";
 import Svg from "./svg";
+import { useFadeinSection } from "../hooks/useFadeinSection";
 const details = [
   {
     title: "Character Creation & Animation",
@@ -20,9 +21,17 @@ const details = [
     svg: svg.svg3,
   },
 ];
-function benefits() {
+function Benefits() {
+  const { ref, visible } = useFadeinSection();
   return (
-    <section className=" relative  px-8 py-20 lg:px-16  min-h-screen bg-purple-500  justify-center flex flex-col gap-10">
+    <section
+      ref={ref}
+      id="benefits"
+      className={`relative  px-8 py-20 lg:px-16  min-h-screen bg-purple-500  justify-center flex flex-col gap-10
+        transition-all duration-700 ease-out
+        ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
+      `}
+    >
       <div
         className="absolute w-80 h-80 opacity-15 blur-2xl"
         style={{
@@ -142,4 +151,4 @@ function benefits() {
   );
 }
 
-export default benefits;
+export default Benefits;

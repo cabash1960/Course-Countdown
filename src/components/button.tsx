@@ -1,13 +1,24 @@
+// import { useWebinarJam } from "./webinarButton";
+
+function openWebinarJam() {
+  window.open(
+    "https://event.webinarjam.com/register/ykznk5ty",
+    "_blank",
+    "noopener,noreferrer"
+  );
+}
+
 function Button({
   children,
-  className,
+  className = "",
 }: {
   children?: React.ReactNode;
-  className: string;
+  className?: string;
 }) {
   return (
     <button
-      className={`bg-yellow-300 hover:bg-yellow-500 text-purple-900 font-semibold text-md lg:text-lg   lg:py-5 lg:px-10 py-3 px-6 rounded-lg shadow-md transition duration-300 ${className}`}
+      onClick={openWebinarJam}
+      className={`bg-yellow-300 hover:bg-yellow-500 text-purple-900 font-semibold text-md lg:text-lg   lg:py-5 lg:px-10 py-3 cursor-pointer px-6 rounded-lg shadow-md transition duration-300  ${className}`}
     >
       {children}
     </button>

@@ -1,10 +1,16 @@
 import { useState } from "react";
-
+function openWebinarJam() {
+  window.open(
+    "https://event.webinarjam.com/register/ykznk5ty",
+    "_blank",
+    "noopener,noreferrer"
+  );
+}
 function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur bg-black/40">
+    <header className="lg:fixed   lg:top-0 lg:left-0 w-full z-50 backdrop-blur bg-linear-to-r from-purple-900 via-purple-800 to-indigo-900">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="text-white font-bold text-xl tracking-tight">
@@ -25,6 +31,7 @@ function Navbar() {
 
           <a
             href="#register"
+            onClick={openWebinarJam}
             className="px-5 py-2 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold hover:opacity-90 transition"
           >
             Enroll Now
@@ -51,7 +58,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-black/90 px-6 pb-6 text-purple-100">
+        <div className="md:hidden bg-black/40 px-6 pt-6 pb-6 text-purple-100">
           <div className="flex flex-col gap-4">
             <a href="#learn" onClick={() => setOpen(false)}>
               What You’ll Learn
@@ -66,7 +73,10 @@ function Navbar() {
             <a
               href="#register"
               className="mt-4 text-center px-5 py-3 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                setOpen(false);
+                openWebinarJam();
+              }}
             >
               Enroll Now
             </a>

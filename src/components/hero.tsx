@@ -4,9 +4,13 @@ import Svg from "./svg";
 
 function Hero() {
   return (
-    <section className="min-h-screen section relative flex flex-col gap-12 items-center justify-center bg-linear-to-r from-purple-900 via-purple-800 to-indigo-900 w-full px-7 lg:px-16 py-10">
+    <section
+      id="learn"
+      className="min-h-screen section relative flex flex-col gap-12 items-center justify-center bg-linear-to-r from-purple-900 via-purple-800 to-indigo-900 w-full px-7 lg:px-16 py-10"
+    >
       <div
-        className="absolute w-96 h-96 rounded-full opacity-20 blur-3xl"
+        className="absolute w-96 h-96 pointer-events-none
+ rounded-full opacity-20 blur-3xl"
         style={{
           background:
             "radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%)",
@@ -16,7 +20,8 @@ function Hero() {
         }}
       />
       <div
-        className="absolute w-80 h-80 opacity-15 blur-2xl"
+        className="absolute  pointer-events-none
+w-80 h-80 opacity-15 blur-2xl"
         style={{
           background:
             "radial-gradient(ellipse, rgba(251, 191, 36, 0.4) 0%, transparent 70%)",
@@ -27,7 +32,8 @@ function Hero() {
         }}
       />
       <div
-        className="absolute w-80 h-80 opacity-15 blur-2xl"
+        className="absolute pointer-events-none
+ w-80 h-80 opacity-15 blur-2xl"
         style={{
           background:
             "radial-gradient(ellipse, rgba(251, 191, 36, 0.4) 0%, transparent 70%)",
@@ -40,7 +46,8 @@ function Hero() {
 
       {/* Center Top Accent */}
       <div
-        className="absolute w-72 h-72 rounded-full opacity-10 blur-3xl"
+        className="absolute pointer-events-none
+ w-72 h-72 rounded-full opacity-10 blur-3xl"
         style={{
           background:
             "radial-gradient(circle, rgba(199, 210, 254, 0.5) 0%, transparent 70%)",
@@ -53,7 +60,8 @@ function Hero() {
 
       {/* Geometric Pattern Overlay - Dots */}
       <div
-        className="absolute inset-0 opacity-5"
+        className="absolute pointer-events-none
+ inset-0 opacity-5"
         style={{
           backgroundImage:
             "radial-gradient(circle, white 1.5px, transparent 1.5px)",
@@ -64,7 +72,8 @@ function Hero() {
 
       {/* Grid Pattern Overlay */}
       <div
-        className="absolute inset-0 opacity-3"
+        className="absolute pointer-events-none
+ inset-0 opacity-3"
         style={{
           backgroundSize: "50px 50px",
           backgroundImage: `
@@ -77,7 +86,8 @@ function Hero() {
 
       {/* Diagonal Lines Bottom Right */}
       <div
-        className="absolute w-96 h-96 opacity-5"
+        className="absolute pointer-events-none
+ w-96 h-96 opacity-5"
         style={{
           background: `repeating-linear-gradient(
             45deg,
@@ -94,7 +104,8 @@ function Hero() {
 
       {/* Floating Circles */}
       <div
-        className="absolute w-24 h-24 rounded-full border-2 border-white/10"
+        className="absolute pointer-events-none
+ w-24 h-24 rounded-full border-2 border-white/10"
         style={{
           top: "20%",
           left: "10%",
@@ -103,7 +114,8 @@ function Hero() {
       />
 
       <div
-        className="absolute w-16 h-16 rounded-full border-2 border-yellow-300/10"
+        className="absolute pointer-events-none
+ w-16 h-16 rounded-full border-2 border-yellow-300/10"
         style={{
           top: "60%",
           right: "15%",
@@ -112,7 +124,8 @@ function Hero() {
       />
 
       <div
-        className="absolute w-32 h-32 rounded-full border-2 border-indigo-300/10"
+        className="absolute  pointer-events-none
+ w-32 h-32 rounded-full border-2 border-indigo-300/10"
         style={{
           bottom: "25%",
           left: "8%",
@@ -127,9 +140,11 @@ function Hero() {
           You Can Animate, Earn, and Land Brand Deals in 30 Days
         </p>
       </div>
+      <div>
+        <Imgcomp className="relative z-10" />
+      </div>
 
-      <Imgcomp />
-      <Button className="">Enroll Now</Button>
+      <Button className="relative z-20">Enroll Now</Button>
 
       <Svg />
     </section>
