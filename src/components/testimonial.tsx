@@ -21,16 +21,26 @@ function Testimonial() {
         </p>
       </div>
       <div className="mt-10 flex flex-col items-center gap-8 ">
-        <img
-          className="  rounded-3xl shadow-lg"
-          src="/fb.jpg"
-          alt="Testimonial Graph"
-        />
-        <img
-          className="  rounded-3xl shadow-lg"
-          src="/yt.jpg"
-          alt="Testimonial Graph"
-        />
+        <div className="relative">
+          <span className="absolute top-4 left-4 bg-purple-900 text-white text-sm font-semibold px-4 py-1 rounded-full shadow-md">
+            Facebook
+          </span>
+          <img
+            className="  rounded-3xl shadow-lg"
+            src="/fb.jpg"
+            alt="Testimonial Graph"
+          />
+        </div>
+        <div className="relative">
+          <span className="absolute top-4 left-4 bg-white text-red-600 text-sm font-semibold px-4 py-1 rounded-full shadow-md">
+            YouTube
+          </span>
+          <img
+            className="  rounded-3xl shadow-lg"
+            src="/yt.jpg"
+            alt="Testimonial Graph"
+          />
+        </div>
       </div>
     </section>
   );
