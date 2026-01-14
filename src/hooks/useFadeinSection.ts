@@ -14,7 +14,7 @@ export function useFadeinSection() {
           observer.disconnect();
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.2 }
     );
 
     if (ref.current) observer.observe(ref.current);
