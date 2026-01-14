@@ -1,4 +1,3 @@
-import Svg from "./svg";
 import { useFadeinSection } from "../hooks/useFadeinSection";
 
 function TrustBar() {
@@ -7,11 +6,14 @@ function TrustBar() {
     <section
       ref={ref}
       className={`
-        transition-all duration-700 ease-out "bg-purple-50 relative min-h-[50vh] flex flex-col items-center justify-center
+        transition-all duration-700 ease-out "bg-purple-50 relative min-h-[50vh]  md:pb-20 flex flex-col items-center justify-center
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
       `}
     >
-      <Svg />
+      {/* <div className="md:mt-5">
+        <Svg />
+      </div> */}
+
       <div className=" z-10   px-7 lg:px-16 pt-20 lg:pt-20 text-center">
         <h2 className="text-4xl lg:text-6xl  font-bold text-purple-900">
           One Skill <br />

@@ -133,7 +133,7 @@ w-80 h-80 opacity-15 blur-2xl"
         }}
       />
       <div className="z-10">
-        <h1 className="text-5xl lg:text-7xl  text-center font-bold text-white mt">
+        <h1 className="text-5xl lg:text-7xl md:mt-15 text-center font-bold text-white mt">
           Can't Draw?
         </h1>
         <p className="text-center text-yellow-300 lg:text-2xl text-lg mt-3">
@@ -144,7 +144,7 @@ w-80 h-80 opacity-15 blur-2xl"
         <Imgcomp className="relative z-10" />
       </div>
 
-      <Button className="relative z-20">Click Here To Register</Button>
+      <Button className="relative z-20 md:mt-5">Click Here To Register</Button>
 
       <Svg />
     </section>
