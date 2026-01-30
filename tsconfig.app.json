@@ -9,6 +9,7 @@
     "types": ["vite/client"],
     "skipLibCheck": true,
     "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
 
     /* Bundler mode */
     "moduleResolution": "bundler",
