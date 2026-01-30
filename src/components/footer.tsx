@@ -1,6 +1,6 @@
 import Button from "./button";
 import { useFadeinSection } from "../hooks/useFadeinSection";
-import AvatarGroupExample from "./avatar";
+import AvatarGroupExample from "./avatarGroupExample";
 
 function Footer() {
   const { ref, visible } = useFadeinSection();

@@ -1,7 +1,7 @@
 import Button from "./button";
 import Imgcomp from "./imgcomp";
 import Svg from "./svg";
-import AvatarGroupExample from "./avatar";
+import AvatarGroupExample from "./avatarGroupExample";
 
 function Hero() {
   return (
