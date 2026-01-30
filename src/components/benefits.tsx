@@ -125,7 +125,7 @@ function Benefits() {
           zIndex: 0,
         }}
       />
-      <Svg />
+
       <h2 className="text-4xl lg:text-6xl z-10 font-bold text-center text-yellow-300">
         What Will You Learn?
       </h2>
@@ -147,6 +147,8 @@ function Benefits() {
           ))}
         </ul>
       </div>
+      <div></div>
+      <Svg />
     </section>
   );
 }

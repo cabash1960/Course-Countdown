@@ -25,9 +25,10 @@ function Navbar() {
           </a>
 
           <a
-            href="#register"
-            onClick={openWebinarJam}
-            className="px-5 py-2 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold hover:opacity-90 transition"
+            href="https://ghenghenacademy.selar.com/430z1k"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-2 rounded-full bg-linear-to-r from-purple-600 to-indigo-600 text-white font-semibold hover:opacity-90 transition"
           >
             Click Here To Register
           </a>

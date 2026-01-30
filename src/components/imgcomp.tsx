@@ -1,7 +1,7 @@
 function Imgcomp({ className }: { className?: string }) {
   return (
     <div
-      className={`grid grid-cols-2 md:grid-cols-4 md:gap-5 gap-2 w-full max-w-8xl ${
+      className={`grid grid-cols-2 md:grid-cols-4 md:gap-5 lg:gap-3 gap-2 w-full place-items-center max-w-8xl ${
         className || ""
       }`}
     >

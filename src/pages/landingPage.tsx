@@ -5,6 +5,7 @@ import Testimonial from "../components/testimonial";
 import Footer from "../components/footer";
 import WebinarButton from "../components/webinarButton";
 import Navbar from "../components/navBar";
+import About from "../components/About";
 
 function landingPage() {
   return (
@@ -14,6 +15,7 @@ function landingPage() {
       <TrustBar />
       <Benefits />
       <Testimonial />
+      <About />
       <Footer />
       <WebinarButton />
     </div>
