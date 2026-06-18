@@ -69,7 +69,7 @@ function Navbar() {
 
             <a
               href="#register"
-              className="mt-4 text-center px-5 py-3 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold"
+              className="mt-4 text-center px-5 py-3 rounded-full bg-linear-to-r from-purple-600 to-indigo-600 text-white font-semibold"
               onClick={() => {
                 setOpen(false);
                 openWebinarJam();
