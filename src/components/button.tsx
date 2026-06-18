@@ -15,7 +15,8 @@ function Button({
     >
       {" "}
       <a
-        href="https://ghenghenacademy.selar.com/430z1k"
+        // href="https://ghenghenacademy.selar.com/430z1k"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSc-C0qf_bSBzNuNvEvJcp8H_cvLRF6gKjiaUqzaOyyPCaTJ1A/viewform?usp=publish-editor"
         target="_blank"
         rel="noopener noreferrer"
       >

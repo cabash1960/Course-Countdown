@@ -20,12 +20,17 @@ function About() {
           <h2 className="text-3xl lg:text-5xl text-purple-900 font-medium  ">
             About Damilola Ajani
           </h2>
-          <p className="text-left lg:text-2xl text-gray-700">
-            About Damilola Ajani is a seasoned digital marketing professional
-            with over a decade of experience. He specializes in SEO, PPC, and
-            content marketing strategies. Mark has trained hundreds of
-            professionals and entrepreneurs, helping them achieve their
-            marketing goals through practical, results-driven approaches.
+          <p className="text-left lg:text-2xl text-gray-700 ">
+            Damilola Ajani is a seasoned Creative Director, animator, and
+            storyteller with years of experience in digital content creation and
+            entertainment. As the founder and creative force behind Ghenghen
+            Jokes on YouTube, he has built a successful platform known for its
+            engaging animated comedy, relatable storytelling, and impactful
+            visual content. Through his work, Damilola has inspired and
+            entertained thousands of viewers while mentoring aspiring creatives
+            in animation, content creation, and digital media. His expertise
+            lies in creative direction animation production, and building
+            compelling content that resonates with diverse audiences.
           </p>
           <Button className="mt-4">Enroll Now </Button>
         </div>

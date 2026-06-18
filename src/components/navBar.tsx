@@ -5,7 +5,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="lg:fixed   lg:top-0 lg:left-0 w-full z-50 backdrop-blur bg-linear-to-r from-purple-900 via-purple-800 to-indigo-900">
+    <header className="lg:fixed relative  lg:top-0 lg:left-0 w-full z-50 backdrop-blur bg-linear-to-r from-purple-900 via-purple-800 to-indigo-900">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="text-white font-bold text-xl tracking-tight">
@@ -25,7 +25,8 @@ function Navbar() {
           </a>
 
           <a
-            href="https://ghenghenacademy.selar.com/430z1k"
+            // href="https://ghenghenacademy.selar.com/430z1k"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc-C0qf_bSBzNuNvEvJcp8H_cvLRF6gKjiaUqzaOyyPCaTJ1A/viewform?usp=publish-editor"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2 rounded-full bg-linear-to-r from-purple-600 to-indigo-600 text-white font-semibold hover:opacity-90 transition"
@@ -54,7 +55,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-black/40 px-6 pt-6 pb-6 text-purple-100">
+        <div className="md:hidden w-full absolute bg-black/60 px-6 pt-6 backdrop-blur-md z-10  pb-6 text-purple-100">
           <div className="flex flex-col gap-4">
             <a href="#learn" onClick={() => setOpen(false)}>
               What You’ll Learn
